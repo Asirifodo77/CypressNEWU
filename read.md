@@ -22,6 +22,9 @@ npx cypress run -e TAGS='@testtagone' --browser chrome --headed
 --install xpath plugin
 npm install -D cypress-xpath
 
+--enviorment run
+npx cypress run -e TAGS='@testtagone' --browser chrome --headed --env env=qa
+
 
 -------------------------------------------------------------------------------------------------------
 #idname

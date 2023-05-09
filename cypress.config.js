@@ -9,6 +9,12 @@ async function setupNodeEvents(on, config) {
   on("file:preprocessor", browserify.default(config));
   require('cypress-mochawesome-reporter/plugin')(on);
   allureWriter(on, config);
+  on('task', {
+    log(message) {
+      console.log(message)
+      return null
+    },
+  })
   // Make sure to return the config object as it might have been modified by the plugin.
   return config;
 }
@@ -20,8 +26,12 @@ module.exports = defineConfig({
     charts: true,
   },
   //video : false,
+  env: {
+    env: 'dev'
+  },
   e2e: {
     setupNodeEvents,
     specPattern: 'cypress/e2e/BDD/*.feature'
   },
+
 });
