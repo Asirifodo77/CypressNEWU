@@ -52,7 +52,7 @@ should,and (param : eq,include,contain,exist,have.length,have.value)
 https://github.com/badeball/cypress-cucumber-preprocessor
 
 npm install @badeball/cypress-cucumber-preprocessor
-
+npm install @cypress/browserify-preprocessor
 
 2. config.js
 
@@ -118,8 +118,11 @@ import 'cypress-mochawesome-reporter/register';
 https://github.com/adamgruber/mochawesome-report-generator#cli-flags
 
 reporterOptions: {
-    code: false,
     charts: true,
+    code: false,
+    reportTitle: 'XX',
+    reportFilename: "XX",
+    timestamp: "longDate"
   },
 
 
