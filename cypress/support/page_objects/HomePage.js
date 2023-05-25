@@ -7,7 +7,7 @@ class HomePage{
     loadMySite(){
         cy.fixture('example').then((dataOne)=>{
             cy.task('log', '#################'+Cypress.env('env'))
-            cy.screenshot('kkkk');
+            cy.screenshot('QQQQ');
             if(Cypress.env('env')=='dev'){
                 cy.visit(dataOne.myTestURL)
                 this.elements.original_text().should('have.text','Gmail')
