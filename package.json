@@ -8,7 +8,8 @@
     "cy:run_test": "cypress run --spec 'cypress/e2e/BDD/*' --browser chrome --headed --env allure=true",
     "allure:report:generate": "allure generate allure-results --clean -o allure-report",
     "allure:report:open": "allure open allure-report",
-    "cy:run_testAll":"npm run cy:run_test && npm run allure:report:generate && npm run allure:report:open"
+    "cy:run_testAll":"npm run cy:run_test && npm run allure:report:generate && npm run allure:report:open",
+    "cy:run_testAllS":"npm run cy:run_test && npm run allure:report:generate && npm run allure:report:open"
   },
   "author": "Asiri",
   "license": "ISC",
