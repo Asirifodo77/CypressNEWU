@@ -25,7 +25,7 @@ module.exports = defineConfig({
     code: false,
     charts: true,
   },
-  //video : false,
+  video : false,
   env: {
     env: 'dev'
   },

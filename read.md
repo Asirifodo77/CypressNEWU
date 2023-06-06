@@ -206,3 +206,15 @@ https://www.npmjs.com/package/multiple-cucumber-html-reporter
 4. run this -> node cucumber-html-report.js --->>it will create the report
 
 
+------------------------------------------------
+npm install cypress
+
+npm install @badeball/cypress-cucumber-preprocessor
+npm install @cypress/browserify-preprocessor
+
+npm i cypress-mochawesome-reporter
+
+npm install -D @shelex/cypress-allure-plugin
+npm install -g allure-commandline
+
+

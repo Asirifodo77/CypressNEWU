@@ -1,7 +1,7 @@
 class HomePage{
 
     elements ={
-        original_text : () => cy.get(':nth-child(1) > .gb_t'),
+        original_text : () => cy.get('a[data-pid=\'23\']'),
     }
 
     loadMySite(){
