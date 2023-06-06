@@ -17,6 +17,7 @@
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^16.0.3",
     "@cypress/browserify-preprocessor": "latest",
+    "allure-commandline": "^2.22.1",
     "cypress": "^12.13.0",
     "multiple-cucumber-html-reporter": "^3.4.0"
   },
